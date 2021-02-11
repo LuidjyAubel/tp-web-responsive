@@ -10,26 +10,140 @@
 
       <meta name="viewport" content="width=device-width,initial-scale=1">
 
-      <link rel="stylesheet" href="w3schools.com/w3css/4/w3.css">
-
-      <script src="w3schools.com/lib/w3.js"></script>
+      <link rel="stylesheet" href="https://w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="stylesheet.css">
+      <script src="https://w3schools.com/lib/w3.js"></script>
 
   </head>
 
   <body>
+    <header>
+<!-- Navigation (Stays on Top) -->
+<nav>
+<div class="w3-top w3-bar w3-black">
 
+    <a href="#home" class="w3-bar-item w3-button">Accueil</a>
+
+    <a href="#about" class="w3-bar-item w3-button">À propos</a>
+
+    <a href="#members" class="w3-bar-item w3-button">Membres</a>
+
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+
+  </div> 
+</nav>
+</header>
+<main>
       <!-- Start Content -->
-
+  <section id="diaporama">
       <div id="home" class="w3-content">
+        ²  <!-- Slides -->
 
-          <!-- Image -->
-
-          <img src="img_la.jpg" alt="L'équipe" style="width:100%">
-
+        <img class="slides" src="img_la.jpg" width="100%">
+      
+        <img class="slides" src="img_ny.jpg" width="100%">
+      
+        <img class="slides" src="img_ch.jpg" width="100%">
+      
+        <script>
+            w3.slideshow(".slides", 1500);
+        </script>
       </div>
-
+    </section>
       <!-- End Content -->
 
+      <!-- About -->
+      <section>
+  <div id="about" class="w3-container w3-padding-32">
+
+    <h1 class="w3-center">Le groupe</h1>
+
+    <p>Ceci est le site Web de notre groupe. Lorem ipsum dolor sit amet, 
+
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+
+      ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+
+      ea commodo consequat.</p>
+</section>
+        <!-- Members -->
+        <section>
+  <div id="members" class="w3-container w3-padding-32">
+
+    <h2 class="w3-center">Les membres du groupe</h2>
+
+    <div class="w3-row w3-center">
+
+        <div class="w3-third">
+
+            <img src="members1.png" alt="Name1" style="width:60%">
+
+        </div>
+
+        <div class="w3-third">
+
+            <img src="img_bandmember.jpg" alt="Name2" style="width:60%">
+
+        </div>
+
+        <div class="w3-third">
+
+            <img src="img_bandmember.jpg" alt="Name3" style="width:60%">
+
+        </div>
+
+    </div>
+</section>
+</div>
+</div> 
+
+<!-- Contact -->
+<aside>
+<div id="contact" class="w3-container w3-center w3-padding-32">
+
+  <h2 class="w3-wide">Contact</h2>
+
+  Avranches, France<br> Téléphone : +33 2 34 56 78 90<br> 
+
+  Email : mail@mail.com<br>
+
+  <p class="w3-opacity w3-center">
+
+    <i>Vous êtes fan ? Envoyer nous un petit message !</i>
+
+  </p>
+
+  <form action="/action_page.php" target="_blank">
+
+      <input class="w3-input" type="text" placeholder="Nom" 
+
+        required name="Name">
+
+      <input class="w3-input" type="text" placeholder="Email" 
+
+        required name="Email">
+
+      <input class="w3-input" type="text" placeholder="Message" 
+
+        required name="Message"><br>
+
+      <button class="w3-button w3-black" type="submit">Envoyer</button>
+
+  </form>
+</aside>
+  <br>
+<footer>
+  <img src="map.jpg" class="w3-image" style="width:100%">
+
+  <p class="w3-center w3-padding">Merci au  
+
+    <a href="w3schools.com/w3css/default.asp" title="W3.CSS" 
+
+    target="_blank">w3.css</a></p>
+</footer>
+</div>
   </body>
 
   </html> 
